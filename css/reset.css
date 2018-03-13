@@ -1,0 +1,36 @@
+*{margin:0; padding:0; }
+html{font-size:62.5%; font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", Arial, sans-serif; }
+body{margin: 0 auto; min-width:320px; line-height: 1.5; color:#000; background: #f7f7f7; overflow-x:hidden; -webkit-overflow-scrolling: touch;font-size:.14rem;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{display: block;}
+audio, canvas, progress, video{display: inline-block; vertical-align: baseline;}
+audio:not([controls]){display: none; height: 0;}
+[hidden], template{display: none;}
+svg:not(:root){overflow: hidden;}
+mark{background: #ff0; color: #000;}
+small{font-size: 80%;}
+sub, sup{font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup{top: -0.5em;}
+sub{bottom: -0.25em;}
+
+table{border-collapse:collapse;}
+ul{ list-style:none;}
+img{border: 0; max-width: 100%;}
+a img{vertical-align: bottom;}
+a{text-decoration: none; color:#000; background-color: transparent; -webkit-tap-highlight-color: transparent;}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0;}
+h1,h2,h3,h4,h5{font-weight: normal; font-size: 1.2em;}
+
+.fl{float: left}
+.fr{float: right}
+.al{text-align: left}
+.ac{text-align: center}
+.ar{text-align: right}
+.hide{display: none}
+
+.clear, .clr{display: block; clear: both; height: 0; line-height: 0; font-size: 0; overflow: hidden;}
+.clearfix2::before,.clearfix2::after{content:""; display: table;}
+.clearfix2::after{clear: both;}
+.clearfix2, .clearfix{*zoom:1;}
+.clearfix:after{display: block; content: ""; clear: both; height: 0; visibility: hidden;}
