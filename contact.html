@@ -115,46 +115,45 @@ var _hmt = _hmt || [];
     </div>
 </div>
 
-<div class="m-popover">
-    <div class="m-close"></div>
-    <div class="index-form cl">
-	<div class="form-txt">
-		<h2>免费评估获取方案和报价</h2>
-		<p>Free evaluation of access to programs and quotes</p>
-	</div>
-	<form method="post" action="/index.php?m=formguide&c=index&a=show&formid=12&siteid=1" name="myform" id="myform" class="registerform">
-
-	  <div class="form-group ">
-		<div class="hd">您的姓名</div>
-		<div class="bd">
-		  <input type="text" name="info[name]" id="name"  class="i-input" datatype="zh2-6" nullmsg="输入您的姓名" errormsg="请输入正确的格式" placeholder="输入您的姓名">
-		</div>
-	  </div>
-	  <div class="form-group ">
-		<div class="hd">您的电话</div>
-		<div class="bd">
-		  <input type="text" name="info[tel]" id="tel" class="i-input" datatype="m" nullmsg="输入您的电话" errormsg="请输入正确的电话格式" placeholder="输入您的电话">
-		</div>
-	  </div>
-	  <div class="form-group ">
-		<div class="hd">服务区域</div>
-		<div class="bd">
-		<label class="ib"><input type="radio" name='info[quyu]' id="quyu_广州"  value="广州" checked> 广州</label>
-				  <label class="ib"><input type="radio" name='info[quyu]' id="quyu_佛山"  value="佛山"> 佛山</label>
-		</div>
-	  </div>
-	  <div class="form-group ">
-		<div class="hd">备注</div>
-		<div class="bd">
-		  <input type="text" name="info[wenti]" id="wenti" class="i-input" placeholder="备注">
-		</div>
-	  </div>
-	  <div class="bk10"></div>
-	  <div class="form-button">
-	  <input type="submit" class="btn-action" name="dosubmit" id="dosubmit" value=" 申请贷款 ">
-	  </div>
-	</form>
-	</div>
+<div class="form-cover" style="display: none;">
+    <a class="close"></a>
+    <div class="form-post">
+        <h2>免费获取贷款方案和报价</h2>
+        <form action="http://www.betterwinfiance.com/index.php?m=formguide&c=index&a=show&formid=12&siteid=1" class="registerform" method="post" name="myform" id="myform">
+            <div class="form-control">
+                <span class="label">姓名：</span>
+                <input type="text" id="name" name="info[name]">
+            </div>
+            <div class="form-control">
+                <span class="label">电话：</span>
+                <input type="tel" id="phone" name="info[tel]">
+            </div>
+            <div class="form-radio">
+                <span class="label">服务区域：</span>
+                <div class="radios">
+                    <label><input type="radio" checked name="info[quyu]" value="广州">广州</label>
+                    <label><input type="radio" name="info[quyu]" value="佛山">佛山</label>
+                </div>
+            </div>
+            <div class="form-radio">
+                <span class="label">服务项目：</span>
+                <div class="radios">
+                    <label><input type="radio" checked name="info[product]" value="房产抵押贷款">房产抵押贷款</label>
+                    <label><input type="radio" name="info[product]" value="按揭房抵押贷款">按揭房抵押贷款</label>
+                    <label><input type="radio" name="info[product]" value="房银行抵押贷款产抵押贷款">银行抵押贷款</label>
+                    <label><input type="radio" name="info[product]" value="赎楼垫资">赎楼垫资</label>
+                    <label><input type="radio" name="info[product]" value="查封房垫资">查封房垫资</label>
+                </div>
+            </div>
+            <div class="form-control">
+                <span class="label">备注：</span>
+                <textarea name="info[wenti]"></textarea>
+            </div>
+            <div class="form-button">
+                <input type="submit" class="btn-action" name="dosubmit" id="dosubmit" value=" 提交申请 ">
+            </div>
+        </form>
+    </div>
 </div>
 
 <script src='js/jquery-1.7.2.min.js'></script>
@@ -189,7 +188,10 @@ $(function(){
 
 })
 </script>
-
+<script src="js/zepto.min.js"></script>
+<script src="js/zepto_fx.js"></script>
+<script src="js/swiper.min.3.42.js"></script>
+<script src="js/public.js"></script>
 
 </body>
 </html>
